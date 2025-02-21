@@ -79,61 +79,23 @@ p{
 .nav-link{
     padding: 0;
 }
-/* .navbar-collapse {
-    flex-grow: 0; 
-}
-
-.navbar {
-    --bs-navbar-toggler-border-color: #FF7800;
-    
-}
-.navbar-toggler{
-    background-color: white;
-}
-
-.navbar a:hover{
-    font-weight: bold;
-    color: #FF7800;
-}
-
-.navbar a{
-    color:white;
-}
-
-
-.navbar-nav {
-    --bs-nav-link-padding-y: 0 rem;
-}
-
-.nav-item .menu-activo{
-    font-weight: bold;
-    color: #FF7800;
-} */
-
-/* -------------------------------------------------- */
-
-/* .carousel-inner{ */
-/* .carousel-item{
-    
-    height: 30rem;
-    
-} */
 
 /* -------------------------------------------------- */
 main{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
-
+    /* background: linear-gradient(white, #ffa247); */
+    /* background-image: radial-gradient(circle, rgba(255,0,0,0), #000000); */
+    /* background-image: radial-gradient(circle, rgba(255,0,0,0), #ffa247); */
 }
 .contenedor {
     max-width: auto;
     margin: 0 40px;/* Margen superior e inferior | margen izquierdo y derecho */
-    
 }
 
-.titulo_h2 h2{
+/* .titulo_h2 h2{
     padding: 1rem 0rem;
-}
+} */
 
 .seccion_servicios img{
     width: 5rem;
@@ -290,7 +252,6 @@ footer{
 .footer-text {
     color:white;
     font-weight: bold;
-    color:white;
 }
 
 .boton_social{
