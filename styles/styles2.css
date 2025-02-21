@@ -1,0 +1,368 @@
+
+/*Reset de css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Lora",sans-serif;
+}
+
+h2{
+    font-family: "Lora",sans-serif;
+}
+
+h3{
+    font-family: "Abhaya Libre",sans-serif;
+}
+
+p{
+    font-family: "Alegreya Sans",sans-serif;
+    text-align:justify;
+
+}
+
+.titulo_h1{
+    text-align:center;
+    /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+    /* font-size: 22px; */
+}
+
+.titulo_h2{
+    text-align:center;
+    /* font-size: 20px; */
+}
+
+/* -------------------------------------------------- */
+/*menu*/
+.logo{
+    width: 65%;
+}
+.logo img{
+    width: 50%;
+}
+
+.fondo_menu{
+    background-color: black;
+}
+.color-texto{
+    color:white;
+}
+
+.activo{
+    font-weight: bold;
+    color: #FF7800;
+}
+
+/* menu cambia de color al pasar */
+.navbar a:hover{
+    font-weight: bold;
+    color: #FF7800;
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: #FF7800;
+    
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar-collapse {
+    flex-grow: 0; 
+}
+
+.nav-link{
+    padding: 0;
+}
+/* .navbar-collapse {
+    flex-grow: 0; 
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: #FF7800;
+    
+}
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar a:hover{
+    font-weight: bold;
+    color: #FF7800;
+}
+
+.navbar a{
+    color:white;
+}
+
+
+.navbar-nav {
+    --bs-nav-link-padding-y: 0 rem;
+}
+
+.nav-item .menu-activo{
+    font-weight: bold;
+    color: #FF7800;
+} */
+
+/* -------------------------------------------------- */
+
+/* .carousel-inner{ */
+/* .carousel-item{
+    
+    height: 30rem;
+    
+} */
+
+/* -------------------------------------------------- */
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
+
+}
+.contenedor {
+    max-width: auto;
+    margin: 0 40px;/* Margen superior e inferior | margen izquierdo y derecho */
+    
+}
+
+.titulo_h2 h2{
+    padding: 1rem 0rem;
+}
+
+.seccion_servicios img{
+    width: 5rem;
+    padding-top: 5px;
+}
+
+.card{
+    border :1px solid #FF7800;
+    /* height: auto; */
+}
+
+.seccion_inmuebles img{
+    width: 100%;
+    /* height: 75%; */
+    /* padding-top: 5px; */
+}
+
+hr{
+    background-color: #FF7800; 
+    height: 3px; 
+    /* border: 0; */
+    border :1px solid #FF7800;
+}
+
+.seccion_personal img{
+    width: 5rem;
+    /*padding-top: 5px;*/
+    background-color: aqua;
+    border-radius: 50%;
+    margin-top: 5px;
+    text-align: center;
+    min-height: 1rem;
+    /*width: 1rem;*/
+}
+
+/* -------------------------------------------------- */
+
+.ver_inmuebles{
+    padding: 1rem 0;;
+}
+
+.btn{
+
+    background-color: #FF7800;
+    color:white;
+    font-weight: bold;
+    border :1px solid #FF7800;
+}
+
+.btn:hover{
+    background-color: #d3690dec;
+    color:white;
+    font-weight: bold;
+}
+
+.estado{
+    font-weight: bold;
+    color: #FF7800;
+}
+/* -------------------------------------------------- */
+/*quienes somos*/
+
+.somos_qsomos{
+    max-width: 100%
+}
+/* -------------------------------------------------- */
+/*servicios*/
+
+.somos_servicio{
+    max-width: 100%
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/*blog*/
+
+.seccion_blog{
+    /* max-width: auto; */
+    margin: 0 10%;/* Margen superior e inferior | margen izquierdo y derecho */
+}
+.seccion_blog .row{
+    justify-content: center;
+	align-items: center;
+}
+
+.seccion_blog img{
+    width: 100%;
+    /* display: block; */
+}
+
+/* .seccion_blog .card-text{
+    text-align:justify;
+} */
+
+.anucio_blog{
+    max-width: 100%
+}
+
+.autor_blog > span{
+    font-weight: bold;
+    color: #FF7800;
+}
+
+/* -------------------------------------------------- */
+/*contacto*/
+
+.fondo-blanco{/*bg-white*/
+    background-color: white;
+    /* border-radius: 30px; */
+    /*border-radius: 10px 100px / 120px;*/
+    /* padding-top: 10px; */
+    padding: 10px 10px;
+}
+
+/* .ubicacion{
+    color:black;
+
+}
+
+.mapa_informacion{
+    margin: 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa_google{
+    background-color: gray; 
+}
+
+.datos_ubicacion{
+    margin-left: 10px;
+    background-color: aqua;
+}
+
+
+.formulario_contacto{
+    
+    color:black;
+    
+} */
+
+/* .formulario_contacto form{
+    margin: 0 40px;
+}
+ */
+/* -------------------------------------------------- */
+/*footer*/
+
+footer{
+    background-image: url(../assets/pie.PNG);
+}
+
+.footer-text {
+    color:white;
+    font-weight: bold;
+    color:white;
+}
+
+.boton_social{
+    display: inline-block;
+    min-height:  30px;
+    width: 30px;
+    background-color: silver;
+    /*margin:0 7px 7px 0;*/
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color:white;
+}
+
+.boton_social:hover{
+    background-color: #FF7800
+}
+
+/* -------------------------------------------------- */
+/* Cambio de pantalla*/
+/* medidas sm 480px md 720px lg 960px xl 1140 xxl 1320*/
+
+/* .mapa{
+    padding: 15px 0; 
+} */
+
+.mapat{
+    /* margin: 0 300px; */
+    width: 100%;
+    height: 500px;
+}
+
+/* Cambio al llegar 960px y superior de pantalla */
+@media (min-width: 960px){ 
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 300px;
+    }
+
+    /* .margen_mapa{
+        margin: 0 300px;
+    } */
+}
+
+/* Cambio al llegar 600px hasta 720px de pantalla */
+@media (min-width: 600px) and (max-width: 720px) { 
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 40px;
+    }
+
+}
+/* Cambio al llegar 480px de pantalla*/
+@media (max-width: 480px) { 
+
+    /*blog*/
+    .seccion_blog{
+        /* max-width: auto; */
+        margin: 0;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    .contenedor {
+        max-width: auto;
+        margin: 0 20px;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 10px;
+    }
+
+
+}
