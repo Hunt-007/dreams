@@ -7,15 +7,15 @@
 }
 
 h1{
-    font-family: "Lora",sans-serif;
+    font-family: "Roboto",sans-serif;
 }
 
 h2{
-    font-family: "Lora",sans-serif;
+    font-family: "Roboto",sans-serif;
 }
 
 h3{
-    font-family: "Abhaya Libre",sans-serif;
+    font-family: "Alegreya Sans",sans-serif;
 }
 
 p{
@@ -81,21 +81,22 @@ p{
 }
 
 /* -------------------------------------------------- */
+/*banner*/
+.mensaje_banner{
+    text-align:center;
+    font-size: 30px;
+}
+
+/* -------------------------------------------------- */
 main{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
-    /* background: linear-gradient(white, #ffa247); */
-    /* background-image: radial-gradient(circle, rgba(255,0,0,0), #000000); */
-    /* background-image: radial-gradient(circle, rgba(255,0,0,0), #ffa247); */
+
 }
 .contenedor {
     max-width: auto;
     margin: 0 40px;/* Margen superior e inferior | margen izquierdo y derecho */
 }
-
-/* .titulo_h2 h2{
-    padding: 1rem 0rem;
-} */
 
 .seccion_servicios img{
     width: 5rem;
@@ -187,9 +188,6 @@ hr{
     /* display: block; */
 }
 
-/* .seccion_blog .card-text{
-    text-align:justify;
-} */
 
 .anucio_blog{
     max-width: 100%
@@ -211,37 +209,18 @@ hr{
     padding: 10px 10px;
 }
 
-/* .ubicacion{
-    color:black;
-
-}
-
-.mapa_informacion{
-    margin: 0 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.mapa_google{
-    background-color: gray; 
-}
-
-.datos_ubicacion{
-    margin-left: 10px;
-    background-color: aqua;
+.mapat{
+    /* margin: 0 300px; */
+    width: 100%;
+    height: 500px;
 }
 
 
-.formulario_contacto{
-    
-    color:black;
-    
-} */
-
-/* .formulario_contacto form{
-    margin: 0 40px;
+.info_mapa span{
+    color:#FF7800;
 }
- */
+
+
 /* -------------------------------------------------- */
 /*footer*/
 
@@ -271,40 +250,46 @@ footer{
 }
 
 /* -------------------------------------------------- */
-/* Cambio de pantalla*/
-/* medidas sm 480px md 720px lg 960px xl 1140 xxl 1320*/
+/* media cambio de resolucion pantalla*/
 
-/* .mapa{
-    padding: 15px 0; 
-} */
-
-.mapat{
-    /* margin: 0 300px; */
-    width: 100%;
-    height: 500px;
-}
-
-/* Cambio al llegar 960px y superior de pantalla */
-@media (min-width: 960px){ 
+/* Cambio al llegar 1024px y superior de pantalla 1024 */
+@media (min-width: 1024px){ 
 
     /*contacto*/
     .formulario_contacto form{
         margin: 0 300px;
     }
 
-    /* .margen_mapa{
-        margin: 0 300px;
-    } */
+    .margen_mapa{
+        margin: 0 250px;
+    }
+
+    .info_mapa{
+        padding-top: 50%;
+        display:flex;
+        flex-direction: column;
+    }
 }
 
-/* Cambio al llegar 600px hasta 720px de pantalla */
-@media (min-width: 600px) and (max-width: 720px) { 
+/* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
+@media (max-width: 720px) { 
 
     /*contacto*/
     .formulario_contacto form{
         margin: 0 40px;
     }
 
+    .info_mapa{
+        padding-top: 0;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .info_mapa p{
+        
+       text-align: center;
+        
+    }
 }
 /* Cambio al llegar 480px de pantalla*/
 @media (max-width: 480px) { 
@@ -325,5 +310,16 @@ footer{
         margin: 0 10px;
     }
 
+    .info_mapa{
+        padding-top: 0;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .info_mapa p{
+        
+       text-align: center;
+        
+    }
 
 }
