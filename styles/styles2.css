@@ -266,7 +266,7 @@ footer{
     }
 
     .info_mapa{
-        padding-top: 50%;
+        padding-top: 30%;
         display:flex;
         flex-direction: column;
     }
