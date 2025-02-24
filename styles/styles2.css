@@ -227,6 +227,7 @@ hr{
 
 footer{
     background-image: url(../assets/pie.PNG);
+    background-color: black;
 }
 
 .footer-text {
