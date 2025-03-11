@@ -21,17 +21,28 @@ h3{
 p{
     font-family: "Alegreya Sans",sans-serif;
     text-align:justify;
-
 }
 
 .titulo_h1{
+    background-color: none;
+}
+
+.titulo_h1 h1{
     text-align:center;
     color: white;
 }
 
 .titulo_h2{
-    text-align:center;
+    background-color: black;
+    border-top-right-radius: 50px;
 }
+
+.titulo_h2 h2{
+    text-align:center;
+    color: white;
+}
+
+
 
 /* -------------------------------------------------- */
 /*menu*/
@@ -88,7 +99,8 @@ p{
 main{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
-
+   
+    /* background-color: white; */
 }
 .contenedor {
     max-width: auto;
@@ -98,7 +110,11 @@ main{
 .fondo_borde{
     border-top-right-radius: 50px;
     background-color: white;
-    padding:10px;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
+    */
+    /* border :1px solid #FF7800; */
+    /* padding:10px; */
 }
 
 .seccion_servicios img{
@@ -128,7 +144,6 @@ hr{
     margin-top: 5px;
     text-align: center;
     min-height: 1rem;
-    /*width: 1rem;*/
 }
 
 /* -------------------------------------------------- */
@@ -277,7 +292,7 @@ footer{
     
     .info_mapa p{
         
-       text-align: center;
+        text-align: center;
         
     }
 }
@@ -307,7 +322,7 @@ footer{
     
     .info_mapa p{
         
-       text-align: center;
+        text-align: center;
         
     }
 

@@ -8,7 +8,8 @@
     <!-- iconos boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- estilo personal -->
-    <link rel="stylesheet" href="../styles/styles2.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
 
     <!--tipografia Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,66 +64,69 @@
         <div class="titulo_h1">
             <h1>Contactos</h1>
         </div>
-        <div class="contenedor fondo-blanco">
-            <!--seccion ubicacion-->
+        <div class="contenedor">
+            <div class="contenedor_contacto pt-3">
+                <!--seccion ubicacion-->
+                <section class="card mb-3 margen_mapa">
+                    <div class="row g-0">
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.1472020518636!2d-70.15399562381376!3d-20.21120324712846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91521159b06da179%3A0x47d26bfa33e2851a!2sEdificio%20Esmeralda!5e0!3m2!1ses-419!2scl!4v1737743600240!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapat"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="card-body info_mapa">
+                            <h2 class="titulo_h2_contacto">Información de Contacto</h2>
+                            <p>Telefono:
+                            <span class="marcado_ubicacion">99999999</span>
+                            </p> 
+                            <p>Oficina:
+                            <span class="marcado_ubicacion">Edificio esmeralda ofcina 3040</span>
+                            </p> 
+                            <p>Horario: 
+                            <span class="marcado_ubicacion">8:00 AM hasta 13:00 PM y 14:00 PM hasta 17:30 PM</span>
+                            </p> 
+                        </div>
+                    </div>
+                    </div>
+                </section>
 
-            <section class="card mb-3 margen_mapa">
-                <div class="row g-0">
-                  <div class="col-lg-7 col-md-12 col-sm-12">
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.1472020518636!2d-70.15399562381376!3d-20.21120324712846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91521159b06da179%3A0x47d26bfa33e2851a!2sEdificio%20Esmeralda!5e0!3m2!1ses-419!2scl!4v1737743600240!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapat"></iframe>
+                <hr>
+                <!--seccion formulario-->
+                <section class="formulario_contacto">
+                    <div class="titulo_h2">
+                        <h2>Consultas</h2>
                     </div>
-                </div>
-                  <div class="col-lg-5 col-md-12 col-sm-12">
-                    <div class="card-body info_mapa">
-                        <h2 class="titulo_h2">Información de Contacto</h2>
-                        <p>Telefono:
-                        <span class="marcado_ubicacion">99999999</span>
-                        </p> 
-                        <p>Oficina:
-                        <span class="marcado_ubicacion">Edificio esmeralda ofcina 3040</span>
-                        </p> 
-                        <p>Horario: 
-                        <span class="marcado_ubicacion">8:00 AM hasta 13:00 PM y 14:00 PM hasta 17:30 PM</span>
-                        </p> 
-                    </div>
-                  </div>
-                </div>
-            </section>
+                    <form action="#" method="post" class="#">
+                        <div class="mb-3">
+                            <label for="contacto_nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="contacto_nombre" placeholder="Ingrese nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contacto_correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="contacto_correo" placeholder="Ingrese correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contacto_telefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="contacto_telefono" placeholder="Ingrese telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contacto_asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="contacto_asunto" placeholder="Ingrese asunto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contacto_mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="contacto_mensaje" rows="3"></textarea>
+                        </div>
+                    
 
-            <hr>
-            <!--seccion formulario-->
-            <section class="formulario_contacto">
-                <h2 class="titulo_h2">Consultas</h2>
-                <form action="#" method="post" class="#">
-                    <div class="mb-3">
-                        <label for="contacto_nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="contacto_nombre" placeholder="Ingrese nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contacto_correo" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="contacto_correo" placeholder="Ingrese correo">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contacto_telefono" class="form-label">Telefono</label>
-                        <input type="text" class="form-control" id="contacto_telefono" placeholder="Ingrese telefono">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contacto_asunto" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="contacto_asunto" placeholder="Ingrese asunto">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contacto_mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="contacto_mensaje" rows="3"></textarea>
-                    </div>
-                   
+                        <div class="pt-3 d-grid gap-2 col-4 mx-auto">
+                            <a href="#" class="btn" role="button">Enviar</a>
+                        </div>
 
-                    <div class="pt-3 d-grid gap-2 col-4 mx-auto">
-                        <a href="#" class="btn" role="button">Enviar</a>
-                    </div>
-
-                </form>
-            </section>
+                    </form>
+                </section>
+            </div>
             <hr>
         </div>
     </main>

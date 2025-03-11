@@ -1,0 +1,381 @@
+@import "utilities/variables";
+
+/**/
+/*Reset de css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Roboto",sans-serif;
+}
+
+h2{
+    font-family: "Roboto",sans-serif;
+}
+
+h3{
+    font-family: "Alegreya Sans",sans-serif;
+}
+
+p{
+    font-family: "Alegreya Sans",sans-serif;
+    text-align:justify;
+}
+@mixin titulo_estilo($align,$color){
+    text-align:$align;
+    color: $color;
+}
+
+.titulo_h1{
+    background-color: none;
+    h1{
+        @include titulo_estilo(center,$colorTituloH1)
+        /* text-align:center;
+        color: $colorTituloH1; */
+    }
+}
+
+.titulo_h2{
+    background-color: $colorTituloH2Fondo;
+    border-top-right-radius: 50px;
+    h2{
+        @include titulo_estilo(center,$colorTituloH2)
+        /* text-align:center;
+        color: $colorTituloH2; */
+    }
+}
+
+.titulo_h2_contacto{
+    h2{
+        // @include titulo_estilo(center,$colorTituloH2)
+        text-align:center;
+        color: $colorTituloH2;
+    }
+}
+/*-------------------------------------------------*/
+/*menu*/
+.logo{
+    width: 65%;
+    img{
+        width: 50%;
+    }
+}
+
+.fondo_menu{
+    background-color: $colorFondoMenu;
+}
+.color-texto{
+    color:$colorTextoMenu;
+}
+
+.activo{
+    font-weight: bold;
+    color: $colorMenuActivo;
+}
+
+/* menu cambia de color al pasar */
+.navbar a:hover{
+    font-weight: bold;
+    color: $colorMenuHover;
+}
+
+/* menu burger */
+/* color border del menu burger */
+.navbar {
+    --bs-navbar-toggler-border-color: #FF7800;/*$colorMenuBurger no funciona en boostrap*/
+    
+}
+
+/*color dentro del menu burger*/
+.navbar-toggler{
+    background-color: $colorMenuBurgerBoton;
+}
+
+.navbar-collapse {
+    flex-grow: 0; 
+}
+
+.nav-link{
+    padding: 0;
+}
+/*-------------------------------------------------*/
+/*banner*/
+.mensaje_banner{
+    text-align:center;
+    font-size: 30px;
+}
+/*-------------------------------------------------*/
+/*main*/
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
+}
+
+.contenedor {
+    max-width: auto;
+    margin: 0 40px;/* Margen superior e inferior | margen izquierdo y derecho */
+}
+
+.contenedor_section{
+    border-top-right-radius: 50px;
+    background-color: $fondoSection;
+}
+
+.contenedor_contacto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $fondoSection;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*servicos e index*/
+.seccion_servicios{
+    background-color: none;
+    img{
+        width: 5rem;
+        padding-top: 5px;
+    }
+}
+
+/*inmuebles e index*/
+.seccion_inmuebles{
+    background-color: none;
+    img{
+        width: 100%;
+    }
+} 
+
+/*General Boostrap*/
+/*Card Articulo*/
+.card{
+    border :1px solid $colorBorderArticulo;
+}
+
+/*linea*/
+hr{
+    background-color: $colorLinea; 
+    height: 3px; 
+    border :1px solid $colorLinea;
+}
+
+/*-------------------------------------------------*/
+/*boton*/
+/*@mixin de atributo boton*/
+@mixin font-wheightBackground-colorColor($tipo,$fondo,$color){
+    font-weight: bold;
+    background-color: $fondo;
+    color:$color;
+}
+
+.btn{
+    @include font-wheightBackground-colorColor(bold,$colorBoton,$colorBotonTexto);
+    border :1px solid $colorBoton;
+}
+
+.btn:hover{
+    @include font-wheightBackground-colorColor(bold,$coloBotonHover,$colorBotonTexto);
+}
+
+/* .estado{
+    font-weight: bold;
+    color: #FF7800;
+} */
+
+/*-------------------------------------------------*/
+/*Quienes Somos*/
+/*seccion personal*/
+.seccion_personal{
+    background-color: none;
+    img{
+        width: 5rem;
+        border-radius: 50%;
+        margin-top: 5px;
+        text-align: center;
+        min-height: 1rem;
+    }
+
+}
+.max_ancho{
+    max-width: 100%
+}
+
+.somos_qsomos{
+    @extend .max_ancho;
+    
+}
+/*-------------------------------------------------*/
+/*servicios*/
+
+.somos_servicio{
+    @extend .max_ancho;
+    
+}
+
+/*-------------------------------------------------*/
+/*blog*/
+
+.seccion_blog{
+    background-color: $fondoBlog;
+    padding: 5px;
+    margin: 0 10%;/* Margen superior e inferior | margen izquierdo y derecho */
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+    .anucio_blog{
+        max-width: 100%;
+        .blog_destacado{
+            font-weight: bold;
+            color: $colorDestacadoTexto;
+        }
+    }
+}
+
+
+
+
+/*-------------------------------------------------*/
+/*contacto*/
+
+.fondo-blanco{/*bg-white*/
+    background-color: $colorFooterTexto;
+    padding: 10px 10px;
+}
+
+.mapat{
+    /* margin: 0 300px; */
+    width: 100%;
+    height: 500px;
+}
+
+.info_mapa{
+    background-color: none;
+    span{
+        color:#FF7800;
+    }
+}
+
+
+/*-------------------------------------------------*/
+/*footer*/
+
+footer{
+    /*background-image: url(../assets/pie.PNG);*/
+    background-color: $colorFondoFooter;
+    .footer-text {
+        color:$colorFooterTexto;
+        font-weight: bold;
+    }
+}
+
+
+.boton_social{
+    display: inline-block;
+    min-height:  30px;
+    width: 30px;
+    background-color: $colorFooter;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color:$colorFooterTexto;
+}
+
+.boton_social:hover{
+    background-color: $colorFooterHover;
+}
+
+
+/* -------------------------------------------------- */
+/* media cambio de resolucion pantalla*/
+
+@mixin paddingDisplayFlex-direction($num){/*num o %*/
+    padding-top: $num;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Cambio al llegar 1024px y superior de pantalla 1024 */
+@media (min-width: 1024px){ 
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 300px;
+    }
+
+    .margen_mapa{
+        margin: 0 250px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(30%);
+        /* padding-top: 30%;
+        display:flex;
+        flex-direction: column; */
+    }
+}
+
+/* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
+@media (max-width: 720px) { 
+
+    /*contacto*/
+    .contenedor_section {
+        padding: 10px;
+    }
+    .formulario_contacto form{
+        margin: 0 40px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(0);
+        /* padding-top: 0;
+        display:flex;
+        flex-direction: column; */
+    }
+    
+    .info_mapa p{
+        
+        text-align: center;
+        
+    }
+}
+/* Cambio al llegar 480px de pantalla*/
+@media (max-width: 480px) { 
+
+    /*blog*/
+    .seccion_blog{
+        margin: 0;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    .contenedor {
+        max-width: auto;
+        margin: 0 20px;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 10px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(0);
+        /* padding-top: 0;
+        display:flex;
+        flex-direction: column; */
+    }
+    
+    .info_mapa p{
+        
+        text-align: center;
+        
+    }
+
+    
+
+}
