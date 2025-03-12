@@ -5,11 +5,10 @@
 /*variables Card Articulo*/
 /*variables boton*/
 /*varible hr o linea horizontal*/
-/*variable Blog*/
+/*variable Blog y contacto*/
 /*footer*/
 /*para texto y icono imagen*/
 /*no hover*/
-/**/
 /*Reset de css*/
 * {
   margin: 0;
@@ -18,14 +17,17 @@
 }
 
 h1 {
+  font-size: 3rem;
   font-family: "Roboto", sans-serif;
 }
 
 h2 {
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
 
 h3 {
+  font-size: 1rem;
   font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -117,6 +119,20 @@ main {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.7791491597) 10%, rgba(253, 187, 45, 0.9472163866) 100%);
 }
 
+/*linea*/
+hr {
+  background-color: #FF7800;
+  height: 3px;
+  border: 1px solid #FF7800;
+}
+
+/*General Boostrap*/
+/*Card Articulo*/
+.card {
+  border: 1px solid #FF7800;
+}
+
+/*contenedores*/
 .contenedor {
   max-width: auto;
   margin: 0 40px; /* Margen superior e inferior | margen izquierdo y derecho */
@@ -135,34 +151,12 @@ main {
   padding-right: 10px;
 }
 
-/*servicos e index*/
-.seccion_servicios {
-  background-color: none;
-}
-.seccion_servicios img {
-  width: 5rem;
-  padding-top: 5px;
-}
-
 /*inmuebles e index*/
 .seccion_inmuebles {
   background-color: none;
 }
 .seccion_inmuebles img {
   width: 100%;
-}
-
-/*General Boostrap*/
-/*Card Articulo*/
-.card {
-  border: 1px solid #FF7800;
-}
-
-/*linea*/
-hr {
-  background-color: #FF7800;
-  height: 3px;
-  border: 1px solid #FF7800;
 }
 
 /*-------------------------------------------------*/
@@ -181,10 +175,6 @@ hr {
   color: white;
 }
 
-/* .estado{
-    font-weight: bold;
-    color: #FF7800;
-} */
 /*-------------------------------------------------*/
 /*Quienes Somos*/
 /*seccion personal*/
@@ -199,12 +189,21 @@ hr {
   min-height: 1rem;
 }
 
-.max_ancho, .somos_servicio, .somos_qsomos {
+.max_ancho, .seccion_blog .anucio_blog, .somos_servicio, .somos_qsomos {
   max-width: 100%;
 }
 
 /*-------------------------------------------------*/
 /*servicios*/
+/*servicos e index*/
+.seccion_servicios {
+  background-color: none;
+}
+.seccion_servicios img {
+  width: 5rem;
+  padding-top: 5px;
+}
+
 /*-------------------------------------------------*/
 /*blog*/
 .seccion_blog {
@@ -219,9 +218,6 @@ hr {
 .seccion_blog img {
   width: 100%;
 }
-.seccion_blog .anucio_blog {
-  max-width: 100%;
-}
 .seccion_blog .anucio_blog .blog_destacado {
   font-weight: bold;
   color: #FF7800;
@@ -229,13 +225,12 @@ hr {
 
 /*-------------------------------------------------*/
 /*contacto*/
-.fondo-blanco { /*bg-white*/
+.fondo-blanco {
   background-color: white;
   padding: 10px 10px;
 }
 
 .mapat {
-  /* margin: 0 300px; */
   width: 100%;
   height: 500px;
 }
@@ -244,6 +239,7 @@ hr {
   background-color: none;
 }
 .info_mapa span {
+  text-align: center;
   color: #FF7800;
 }
 
@@ -289,9 +285,6 @@ footer .footer-text {
     padding-top: 30%;
     display: flex;
     flex-direction: column;
-    /* padding-top: 30%;
-    display:flex;
-    flex-direction: column; */
   }
 }
 /* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
@@ -308,9 +301,6 @@ footer .footer-text {
     padding-top: 0;
     display: flex;
     flex-direction: column;
-    /* padding-top: 0;
-    display:flex;
-    flex-direction: column; */
   }
   .info_mapa p {
     text-align: center;
@@ -335,9 +325,6 @@ footer .footer-text {
     padding-top: 0;
     display: flex;
     flex-direction: column;
-    /* padding-top: 0;
-    display:flex;
-    flex-direction: column; */
   }
   .info_mapa p {
     text-align: center;

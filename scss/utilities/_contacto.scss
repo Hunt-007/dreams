@@ -1,0 +1,19 @@
+/*-------------------------------------------------*/
+/*contacto*/
+
+.fondo-blanco{
+    background-color: $colorFooterTexto;
+    padding: 10px 10px;
+}
+
+.mapat{
+    width: 100%;
+    height: 500px;
+}
+
+.info_mapa{
+    background-color: none;
+    span{
+        @include text-alignColor(center,$colorDestacadoTexto)
+    }
+}

@@ -1,0 +1,18 @@
+/*contenedores*/
+.contenedor {
+    max-width: auto;
+    margin: 0 40px;/* Margen superior e inferior | margen izquierdo y derecho */
+}
+
+.contenedor_section{
+    border-top-right-radius: 50px;
+    background-color: $fondoSection;
+}
+
+.contenedor_contacto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $fondoSection;
+    padding-left: 10px;
+    padding-right: 10px;
+}

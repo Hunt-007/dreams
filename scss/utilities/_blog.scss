@@ -1,0 +1,23 @@
+/*-------------------------------------------------*/
+/*blog*/
+
+.seccion_blog{
+    background-color: $fondoBlog;
+    padding: 5px;
+    margin: 0 10%;/* Margen superior e inferior | margen izquierdo y derecho */
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+    .anucio_blog{
+        // max-width: 100%;
+        @extend .max_ancho;
+        .blog_destacado{
+            font-weight: bold;
+            color: $colorDestacadoTexto;
+        }
+    }
+}

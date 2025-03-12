@@ -1,0 +1,22 @@
+/*-------------------------------------------------*/
+/*Quienes Somos*/
+/*seccion personal*/
+.seccion_personal{
+    background-color: none;
+    img{
+        width: 5rem;
+        border-radius: 50%;
+        margin-top: 5px;
+        text-align: center;
+        min-height: 1rem;
+    }
+
+}
+.max_ancho{
+    max-width: 100%
+}
+
+.somos_qsomos{
+    @extend .max_ancho;
+    
+}

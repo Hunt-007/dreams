@@ -1,0 +1,17 @@
+/*-------------------------------------------------*/
+/*boton*/
+/*@mixin de atributo boton*/
+@mixin font-wheightBackground-colorColor($tipo,$fondo,$color){
+    font-weight: bold;
+    background-color: $fondo;
+    color:$color;
+}
+
+.btn{
+    @include font-wheightBackground-colorColor(bold,$colorBoton,$colorBotonTexto);
+    border :1px solid $colorBoton;
+}
+
+.btn:hover{
+    @include font-wheightBackground-colorColor(bold,$coloBotonHover,$colorBotonTexto);
+}

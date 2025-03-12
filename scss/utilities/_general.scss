@@ -1,0 +1,125 @@
+/*Reset de css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$listaHeadings: 3rem, 2rem, 1rem;
+@for $i from 1 through 3{
+    h#{$i}{
+        font-size: nth($listaHeadings,$i);
+        @if $i==1 or $i==2{
+            font-family: "Roboto",sans-serif;
+        }
+        @else if $i==3{
+            font-family: "Alegreya Sans",sans-serif;
+        }
+    }
+}
+
+p{
+    font-family: "Alegreya Sans",sans-serif;
+    text-align:justify;
+}
+
+
+
+@mixin text-alignColor($align,$color){
+    text-align:$align;
+    color: $color;
+}
+
+.titulo_h1{
+    background-color: none;
+    h1{
+        @include text-alignColor(center,$colorTituloH1)
+    }
+}
+
+.titulo_h2{
+    background-color: $colorTituloH2Fondo;
+    border-top-right-radius: 50px;
+    h2{
+        @include text-alignColor(center,$colorTituloH2)
+    }
+}
+
+.titulo_h2_contacto{
+    h2{
+        @include text-alignColor(center,$colorTituloH2)
+    }
+}
+
+/*-------------------------------------------------*/
+/*menu*/
+.logo{
+    width: 65%;
+    img{
+        width: 50%;
+    }
+}
+
+.fondo_menu{
+    background-color: $colorFondoMenu;
+}
+.color-texto{
+    color:$colorTextoMenu;
+}
+
+.activo{
+    font-weight: bold;
+    color: $colorMenuActivo;
+}
+
+/* menu cambia de color al pasar */
+.navbar a:hover{
+    font-weight: bold;
+    color: $colorMenuHover;
+}
+
+/* menu burger */
+/* color border del menu burger */
+.navbar {
+    --bs-navbar-toggler-border-color: #FF7800;/*$colorMenuBurger no funciona en boostrap*/
+    
+}
+
+/*color dentro del menu burger*/
+.navbar-toggler{
+    background-color: $colorMenuBurgerBoton;
+}
+
+.navbar-collapse {
+    flex-grow: 0; 
+}
+
+.nav-link{
+    padding: 0;
+}
+/*-------------------------------------------------*/
+/*banner*/
+.mensaje_banner{
+    text-align:center;
+    font-size: 30px;
+}
+/*-------------------------------------------------*/
+/*main*/
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7791491596638656) 10%, rgba(253,187,45,0.9472163865546218) 100%);
+}
+
+/*linea*/
+hr{
+    background-color: $colorLinea; 
+    height: 3px; 
+    border :1px solid $colorLinea;
+}
+
+/*General Boostrap*/
+/*Card Articulo*/
+.card{
+    border :1px solid $colorBorderArticulo;
+}

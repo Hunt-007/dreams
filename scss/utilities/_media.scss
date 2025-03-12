@@ -1,0 +1,70 @@
+/* -------------------------------------------------- */
+/* media cambio de resolucion pantalla*/
+
+@mixin paddingDisplayFlex-direction($num){/*num o %*/
+    padding-top: $num;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Cambio al llegar 1024px y superior de pantalla 1024 */
+@media (min-width: 1024px){ 
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 300px;
+    }
+
+    .margen_mapa{
+        margin: 0 250px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(30%);
+    }
+}
+
+/* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
+@media (max-width: 720px) { 
+
+    /*contacto*/
+    .contenedor_section {
+        padding: 10px;
+    }
+    .formulario_contacto form{
+        margin: 0 40px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(0);
+        p{
+            text-align: center;
+        }
+    }
+
+}
+/* Cambio al llegar 480px de pantalla*/
+@media (max-width: 480px) { 
+
+    /*blog*/
+    .seccion_blog{
+        margin: 0;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    .contenedor {
+        max-width: auto;
+        margin: 0 20px;/* Margen superior e inferior | margen izquierdo y derecho */
+    }
+
+    /*contacto*/
+    .formulario_contacto form{
+        margin: 0 10px;
+    }
+
+    .info_mapa{
+        @include paddingDisplayFlex-direction(0);
+        p{
+            text-align: center;
+        }
+    }
+}
