@@ -23,4 +23,6 @@ footer{
 
 .boton_social:hover{
     background-color: $colorFooterHover;
+    animation:flip;
+    animation-duration:2s;
 }

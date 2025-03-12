@@ -6,7 +6,7 @@
 }
 
 
-$listaHeadings: 3rem, 2rem, 1rem;
+$listaHeadings: 3rem, 2rem, 1.5rem;
 @for $i from 1 through 3{
     h#{$i}{
         font-size: nth($listaHeadings,$i);
@@ -17,6 +17,11 @@ $listaHeadings: 3rem, 2rem, 1rem;
             font-family: "Alegreya Sans",sans-serif;
         }
     }
+}
+
+h1:hover{
+    animation:heartBeat;
+    animation-duration:1s;
 }
 
 p{
@@ -77,6 +82,8 @@ p{
 .navbar a:hover{
     font-weight: bold;
     color: $colorMenuHover;
+    animation:jello;
+    animation-duration:1s;
 }
 
 /* menu burger */

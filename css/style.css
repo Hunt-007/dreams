@@ -27,8 +27,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: "Alegreya Sans", sans-serif;
+}
+
+h1:hover {
+  animation: heartBeat;
+  animation-duration: 1s;
 }
 
 p {
@@ -84,6 +89,8 @@ p {
 .navbar a:hover {
   font-weight: bold;
   color: #FF7800;
+  animation: jello;
+  animation-duration: 1s;
 }
 
 /* menu burger */
@@ -267,6 +274,8 @@ footer .footer-text {
 
 .boton_social:hover {
   background-color: #FF7800;
+  animation: flip;
+  animation-duration: 2s;
 }
 
 /* -------------------------------------------------- */
