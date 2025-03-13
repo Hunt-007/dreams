@@ -10,7 +10,17 @@
     }
 }
 
+.logo_animado:hover{
+    img{
+        background-color: $fondoLogo;
+        animation:flip;
+        animation-duration:2s;
+    }
+}
+
 .somos_servicio{
     @extend .max_ancho;
-    
+    .row{
+        @extend .centrado_vertical;
+    }
 }

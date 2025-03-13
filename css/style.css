@@ -200,6 +200,10 @@ hr {
   max-width: 100%;
 }
 
+.centrado_vertical, .somos_servicio .row, .somos_qsomos .row {
+  align-items: center;
+}
+
 /*-------------------------------------------------*/
 /*servicios*/
 /*servicos e index*/
@@ -209,6 +213,12 @@ hr {
 .seccion_servicios img {
   width: 5rem;
   padding-top: 5px;
+}
+
+.logo_animado:hover img {
+  background-color: white;
+  animation: flip;
+  animation-duration: 2s;
 }
 
 /*-------------------------------------------------*/

@@ -1,5 +1,7 @@
 /*-------------------------------------------------*/
 /*Quienes Somos*/
+
+
 /*seccion personal*/
 .seccion_personal{
     background-color: none;
@@ -16,7 +18,14 @@
     max-width: 100%
 }
 
+.centrado_vertical{
+    align-items: center;
+}
+
 .somos_qsomos{
     @extend .max_ancho;
+    .row{
+        @extend .centrado_vertical;
+    }
     
 }
