@@ -5,3 +5,50 @@
         width: 100%;
     }
 } 
+
+.contenedorInfo {
+    display: flex;
+    justify-content: space-evenly; /* Espacios entre los elementos */
+    /* align-items: center; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item {
+    display: flex;
+   /*  align-items: center; */ /* Centra verticalmente el número y la imagen */
+}
+
+.item span {
+    margin-right: 10px; /* Espacio entre el número y la imagen */
+    font-weight: bold;
+}
+
+.item img {
+    background-color: none;
+    width: none; /* Tamaño de las imágenes */
+    height: none;
+}
+
+.seccion_inmuebles .card-text{
+    height: 210px;
+}
+
+.infoInmuebles{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.precio{
+    font-size:1.5rem;
+    color:#FF7800;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.estado{
+    font-size:1.5rem;
+    color:#FF7800;
+    margin: 20px;
+    font-weight: bold;
+}

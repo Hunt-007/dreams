@@ -25,7 +25,7 @@
 }
 
 /* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
-@media (max-width: 720px) { 
+@media (max-width: 800px) { 
 
     /*contacto*/
     .contenedor_section {
@@ -40,6 +40,14 @@
         p{
             text-align: center;
         }
+    }
+    /*servicios*/
+    .seccion_servicios .card-text{
+        height: 160px;
+    }
+    /*inmuebles*/
+    .seccion_inmuebles .card-text{
+        height: auto;
     }
 
 }
@@ -66,5 +74,13 @@
         p{
             text-align: center;
         }
+    }
+    /*servicios*/
+    .seccion_servicios .card-text{
+        height: auto;
+    }
+    /*inmuebles*/
+    .seccion_inmuebles .card-text{
+        height: auto;
     }
 }

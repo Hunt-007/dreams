@@ -18,6 +18,11 @@
     }
 }
 
+.seccion_servicios .card-text{
+    height: 180px;
+    
+}
+
 .somos_servicio{
     @extend .max_ancho;
     .row{
