@@ -19,7 +19,8 @@
 }
 
 .seccion_servicios .card-text{
-    height: 180px;
+    @include card-text_dimension(180px,none);
+    // height: 180px;
     
 }
 

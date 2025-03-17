@@ -9,14 +9,12 @@
 .contenedorInfo {
     display: flex;
     justify-content: space-evenly; /* Espacios entre los elementos */
-    /* align-items: center; */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .item {
     display: flex;
-   /*  align-items: center; */ /* Centra verticalmente el número y la imagen */
 }
 
 .item span {
@@ -31,7 +29,8 @@
 }
 
 .seccion_inmuebles .card-text{
-    height: 210px;
+    @include card-text_dimension(210px,none);
+    // height: 210px;
 }
 
 .infoInmuebles{

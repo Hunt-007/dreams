@@ -82,8 +82,8 @@ p{
 .navbar a:hover{
     font-weight: bold;
     color: $colorMenuHover;
-    animation:jello;
-    animation-duration:1s;
+    animation:shakeY;
+    animation-duration:2s;
 }
 
 /* menu burger */
@@ -129,4 +129,9 @@ hr{
 /*Card Articulo*/
 .card{
     border :1px solid $colorBorderArticulo;
+}
+
+@mixin card-text_dimension($altura,$fondo){
+    height: $altura;
+    background-color: $fondo;
 }

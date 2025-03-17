@@ -90,8 +90,8 @@ p {
 .navbar a:hover {
   font-weight: bold;
   color: #FF7800;
-  animation: jello;
-  animation-duration: 1s;
+  animation: shakeY;
+  animation-duration: 2s;
 }
 
 /* menu burger */
@@ -170,14 +170,12 @@ hr {
 .contenedorInfo {
   display: flex;
   justify-content: space-evenly; /* Espacios entre los elementos */
-  /* align-items: center; */
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .item {
   display: flex;
-  /*  align-items: center; */ /* Centra verticalmente el número y la imagen */
 }
 
 .item span {
@@ -193,6 +191,7 @@ hr {
 
 .seccion_inmuebles .card-text {
   height: 210px;
+  background-color: none;
 }
 
 .infoInmuebles {
@@ -252,6 +251,11 @@ hr {
   align-items: center;
 }
 
+/*define tamaño de la card personal*/
+.seccion_personal .card-text {
+  height: 180px;
+}
+
 /*-------------------------------------------------*/
 /*servicios*/
 /*servicos e index*/
@@ -271,6 +275,7 @@ hr {
 
 .seccion_servicios .card-text {
   height: 180px;
+  background-color: none;
 }
 
 /*-------------------------------------------------*/
@@ -358,8 +363,15 @@ footer .footer-text {
     flex-direction: column;
   }
 }
-/* Cambio al llegar 600px hasta 720px de pantalla  (min-width: 600px) and */
-@media (max-width: 800px) {
+@media (max-width: 1230px) {
+  /*personal*/
+  .seccion_personal .card-text {
+    height: 400px;
+    background-color: none;
+  }
+}
+/* Cambio al llegar 700px de pantalla  (min-width: 800px)*/
+@media (max-width: 700px) {
   /*contacto*/
   .contenedor_section {
     padding: 10px;
@@ -379,10 +391,17 @@ footer .footer-text {
   /*servicios*/
   .seccion_servicios .card-text {
     height: 160px;
+    background-color: none;
   }
   /*inmuebles*/
   .seccion_inmuebles .card-text {
     height: auto;
+    background-color: none;
+  }
+  /*personal*/
+  .seccion_personal .card-text {
+    height: 400px;
+    background-color: none;
   }
 }
 /* Cambio al llegar 480px de pantalla*/
@@ -411,10 +430,17 @@ footer .footer-text {
   /*servicios*/
   .seccion_servicios .card-text {
     height: auto;
+    background-color: none;
   }
   /*inmuebles*/
   .seccion_inmuebles .card-text {
     height: auto;
+    background-color: none;
+  }
+  /*personal*/
+  .seccion_personal .card-text {
+    height: auto;
+    background-color: none;
   }
 }
 
