@@ -4,6 +4,7 @@
 /*no funciona en boostrap*/
 /*variables fondo*/
 /*variables Card Articulo*/
+/*inmueble*/
 /*variables boton*/
 /*varible hr o linea horizontal*/
 /*variable Blog y contacto*/
@@ -200,14 +201,7 @@ hr {
   justify-content: space-evenly;
 }
 
-.precio {
-  font-size: 1.5rem;
-  color: #FF7800;
-  margin: 15px;
-  font-weight: bold;
-}
-
-.estado {
+.textoDest, .estado, .precio {
   font-size: 1.5rem;
   color: #FF7800;
   margin: 15px;

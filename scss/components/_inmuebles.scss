@@ -38,16 +38,18 @@
     justify-content: space-evenly;
 }
 
-.precio{
+.textoDest{
+
     font-size:1.5rem;
-    color:#FF7800;
+    color:$colorTextoDest;
     margin: 15px;
     font-weight: bold;
 }
 
+.precio{
+    @extend .textoDest;
+}
+
 .estado{
-    font-size:1.5rem;
-    color:#FF7800;
-    margin: 15px;
-    font-weight: bold;
+    @extend .textoDest;
 }
