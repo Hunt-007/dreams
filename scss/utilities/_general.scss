@@ -6,7 +6,7 @@
 }
 
 
-$listaHeadings: 3rem, 2rem, 1.5rem;
+$listaHeadings: 2.5rem, 2rem, 1.5rem;
 @for $i from 1 through 3{
     h#{$i}{
         font-size: nth($listaHeadings,$i);
