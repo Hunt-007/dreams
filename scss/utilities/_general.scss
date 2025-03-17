@@ -83,7 +83,7 @@ p{
 .navbar a:hover{
     font-weight: bold;
     color: $colorMenuHover;
-    animation:shakeY;
+    animation:headShake;
     animation-duration:2s;
 }
 

@@ -91,7 +91,7 @@ p {
 .navbar a:hover {
   font-weight: bold;
   color: #FF7800;
-  animation: shakeY;
+  animation: headShake;
   animation-duration: 2s;
 }
 
@@ -398,7 +398,7 @@ footer .footer-text {
   }
   /*servicios*/
   .seccion_servicios .card-text {
-    height: 160px;
+    height: 180px;
     background-color: none;
   }
   /*inmuebles*/
