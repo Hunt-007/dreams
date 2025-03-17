@@ -26,14 +26,24 @@
     }
 }
 @media (max-width: 1230px) { 
-    /*personal*/
+    // personal
     .seccion_personal .card-text{
         @include card-text_dimension(400px,none);
-        // height: 400px;
+        
+    }
+    // inmuebles
+    .seccion_inmuebles .card-text{
+        @include card-text_dimension(300px,none);
+        
+    }
+
+    .seccion_inmuebles .index_inmueble{
+        @include card-text_dimension(auto,none);
+        
     }
 }
-/* Cambio al llegar 700px de pantalla  (min-width: 800px)*/
-@media (max-width: 700px) { 
+/* Cambio al llegar 800px de pantalla  (min-width: 800px)*/
+@media (max-width: 800px) { 
 
     /*contacto*/
     .contenedor_section {
@@ -52,17 +62,23 @@
     /*servicios*/
     .seccion_servicios .card-text{
         @include card-text_dimension(160px,none);
-        // height: 160px;
+        
     }
     /*inmuebles*/
     .seccion_inmuebles .card-text{
-        @include card-text_dimension(auto,none);
-        // height: auto;
+        @include card-text_dimension(300px,none);
+        
     }
+
+    .seccion_inmuebles .index_inmueble{
+        @include card-text_dimension(auto,none);
+        
+    }
+
     /*personal*/
     .seccion_personal .card-text{
         @include card-text_dimension(400px,none);
-        // height: 400px;
+        
     }
 
 }
@@ -93,16 +109,16 @@
     /*servicios*/
     .seccion_servicios .card-text{
         @include card-text_dimension(auto,none);
-        // height: auto;
+        
     }
     /*inmuebles*/
     .seccion_inmuebles .card-text{
         @include card-text_dimension(auto,none);
-        // height: auto;
+        
     }
     /*personal*/
     .seccion_personal .card-text{
         @include card-text_dimension(auto,none);
-        // height: auto;
+        
     }
 }
