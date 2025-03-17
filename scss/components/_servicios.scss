@@ -12,8 +12,8 @@
 
 .logo_animado:hover{
     img{
-        background-color: $fondoLogo;
-        animation:flip;
+        background-color: none;/*$fondoLogo*/
+        animation:tada;
         animation-duration:2s;
     }
 }
