@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-
+/* titulos H */
 $listaHeadings: 2.5rem, 2rem, 1.5rem;
 @for $i from 1 through 3{
     h#{$i}{
@@ -40,21 +40,21 @@ p{
     padding-top: 5px;
     background-color: none;
     h1{
-        @include text-alignColor(center,$colorTituloH1)
+        @include text-alignColor(center,$colorTexto2)
     }
 }
 
 .titulo_h2{
-    background-color: $colorTituloH2Fondo;
+    background-color: $fondo1;
     border-top-right-radius: 50px;
     h2{
-        @include text-alignColor(center,$colorTituloH2)
+        @include text-alignColor(center,$colorTexto2)
     }
 }
 
 .titulo_h2_contacto{
     h2{
-        @include text-alignColor(center,$colorTituloH2)
+        @include text-alignColor(center,$colorTexto2)
     }
 }
 
@@ -68,21 +68,21 @@ p{
 }
 
 .fondo_menu{
-    background-color: $colorFondoMenu;
+    background-color: $fondo1;
 }
 .color-texto{
-    color:$colorTextoMenu;
+    color:$colorTexto2;
 }
 
 .activo{
     font-weight: bold;
-    color: $colorMenuActivo;
+    color: $colorTexto3;
 }
 
 /* menu cambia de color al pasar */
 .navbar a:hover{
     font-weight: bold;
-    color: $colorMenuHover;
+    color: $colorTexto3;
     animation:headShake;
     animation-duration:2s;
 }
@@ -94,9 +94,9 @@ p{
     
 }
 
-/*color dentro del menu burger*/
+/*color fondo dentro del menu burger*/
 .navbar-toggler{
-    background-color: $colorMenuBurgerBoton;
+    background-color: $fondo2;
 }
 
 .navbar-collapse {
@@ -121,15 +121,15 @@ main{
 
 /*linea*/
 hr{
-    background-color: $colorLinea; 
+    background-color: $fondo3; 
     height: 3px; 
-    border :1px solid $colorLinea;
+    border :1px solid $fondo3;
 }
 
 /*General Boostrap*/
 /*Card Articulo*/
 .card{
-    border :1px solid $colorBorderArticulo;
+    border :1px solid $fondo3;
 }
 
 @mixin card-text_dimension($altura,$fondo){

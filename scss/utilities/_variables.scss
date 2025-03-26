@@ -1,43 +1,52 @@
-/*variables titulos*/
-$colorTituloH1:white;
-$colorTituloH2:white;
+// variables titulos
+// $colorTitulo1:white;
+// $colorTituloH1:white;->$colorTitulo1
+// $colorTituloH2:white;->$colorTitulo1
 
-$colorTituloH2Fondo:black;
+$fondo1:black;
+$fondo2:white;
+$fondo3:#FF7800;
+$fondo4:#d3690dec;
+$fondo5:silver;
+// $colorTituloH2Fondo:black;->$fondo1
 
-/*variables menu*/
-$colorFondoMenu:black;
-$colorTextoMenu:white;
+// variables menu
+// $colorFondoMenu:black;->$fondo1
+$colorTexto1:black;
+$colorTexto2:white;
+$colorTexto3:#FF7800;
+// $colorTextoMenu:white;->$colorTexto1
 
-$colorMenuActivo:#FF7800;
-$colorMenuHover:#FF7800;
+// $colorMenuActivo:#FF7800;->$colorDestacado1
+//$colorMenuHover:#FF7800;->$colorDestacado1
 
-$colorMenuBurger:#FF7800;/*no funciona en boostrap*/
-$colorMenuBurgerBoton:white;
+// $colorMenuBurger:#FF7800;/*no funciona en boostrap*/
+// $colorMenuBurgerBoton:white;->$fondo2
 
-/*variables fondo*/
-$fondoLogo : white;
-$fondoSection:white;
-$fondoBlog : white;
+// variables fondo
+// $fondoLogo : white;->$fondo1
+// $fondoSection:white;->$fondo2
+//$fondoBlog : white;->$fondo2
 
-/*variables Card Articulo*/
-$colorBorderArticulo:#FF7800;
+// variables Card Articulo
+// $colorBorderArticulo:#FF7800;->$colorDestacado1
 
-/*inmueble*/
-$colorTextoDest:#FF7800;
+// inmueble
+//$colorTextoDest:#FF7800;->$colorTexto3
 
-/*variables boton*/
-$colorBoton:#FF7800;
-$coloBotonHover:#d3690dec;
-$colorBotonTexto:white;
+// variables boton
+// $colorBoton:#FF7800;->$fondo3
+// $coloBotonHover:#d3690dec;->$fondo4
+// $colorBotonTexto:white;->$colorTexto2
 
-/*varible hr o linea horizontal*/
-$colorLinea:#FF7800;
+// varible hr o linea horizontal
+// $colorLinea:#FF7800;->$colorDestacado1
 
-/*variable Blog y contacto*/
-$colorDestacadoTexto:#FF7800;
+// variable Blog y contacto
+// $colorDestacadoTexto:#FF7800;->$colorTexto3
 
-/*footer*/
-$colorFooterTexto:white;/*para texto y icono imagen*/
-$colorFondoFooter:black;
-$colorFooter:silver;/*no hover*/
-$colorFooterHover:#FF7800;
+// footer
+// $colorFooterTexto:white;/*para texto y icono imagen*/->$colorTexto2
+// $colorFondoFooter:black;->$fondo1
+// $colorFooter:silver;/*no hover*/->$fondo5
+// $colorFooterHover:#FF7800;->$fondo3

@@ -1,16 +1,4 @@
 @charset "UTF-8";
-/*variables titulos*/
-/*variables menu*/
-/*no funciona en boostrap*/
-/*variables fondo*/
-/*variables Card Articulo*/
-/*inmueble*/
-/*variables boton*/
-/*varible hr o linea horizontal*/
-/*variable Blog y contacto*/
-/*footer*/
-/*para texto y icono imagen*/
-/*no hover*/
 /*Reset de css*/
 * {
   margin: 0;
@@ -18,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* titulos H */
 h1 {
   font-size: 2.5rem;
   font-family: "Roboto", sans-serif;
@@ -102,7 +91,7 @@ p {
   --bs-navbar-toggler-border-color: #FF7800; /*$colorMenuBurger no funciona en boostrap*/
 }
 
-/*color dentro del menu burger*/
+/*color fondo dentro del menu burger*/
 .navbar-toggler {
   background-color: white;
 }
