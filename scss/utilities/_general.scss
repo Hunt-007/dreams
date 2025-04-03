@@ -40,21 +40,21 @@ p{
     padding-top: 5px;
     background-color: none;
     h1{
-        @include text-alignColor(center,$colorTexto2)
+        @include text-alignColor(center,$color2)
     }
 }
 
 .titulo_h2{
-    background-color: $fondo1;
+    background-color: $color1;
     border-top-right-radius: 50px;
     h2{
-        @include text-alignColor(center,$colorTexto2)
+        @include text-alignColor(center,$color2)
     }
 }
 
 .titulo_h2_contacto{
     h2{
-        @include text-alignColor(center,$colorTexto2)
+        @include text-alignColor(center,$color2)
     }
 }
 
@@ -68,21 +68,21 @@ p{
 }
 
 .fondo_menu{
-    background-color: $fondo1;
+    background-color: $color1;
 }
 .color-texto{
-    color:$colorTexto2;
+    color:$color2;
 }
 
 .activo{
     font-weight: bold;
-    color: $colorTexto3;
+    color: $color3;
 }
 
 /* menu cambia de color al pasar */
 .navbar a:hover{
     font-weight: bold;
-    color: $colorTexto3;
+    color: $color3;
     animation:headShake;
     animation-duration:2s;
 }
@@ -96,7 +96,7 @@ p{
 
 /*color fondo dentro del menu burger*/
 .navbar-toggler{
-    background-color: $fondo2;
+    background-color: $color2;
 }
 
 .navbar-collapse {
@@ -121,15 +121,15 @@ main{
 
 /*linea*/
 hr{
-    background-color: $fondo3; 
+    background-color: $color3; 
     height: 3px; 
-    border :1px solid $fondo3;
+    border :1px solid $color3;
 }
 
 /*General Boostrap*/
 /*Card Articulo*/
 .card{
-    border :1px solid $fondo3;
+    border :1px solid $color3;
 }
 
 @mixin card-text_dimension($altura,$fondo){

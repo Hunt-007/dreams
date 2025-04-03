@@ -2,7 +2,7 @@
 /*contacto*/
 
 .fondo-blanco{
-    background-color: $colorTexto2;
+    background-color: $color2;
     padding: 10px 10px;
 }
 
@@ -14,6 +14,6 @@
 .info_mapa{
     background-color: none;
     span{
-        @include text-alignColor(center,$colorTexto3)
+        @include text-alignColor(center,$color3)
     }
 }

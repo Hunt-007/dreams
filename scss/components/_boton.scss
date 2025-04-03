@@ -8,10 +8,10 @@
 }
 
 .btn{
-    @include font-wheightBackground-colorColor(bold,$fondo3,$colorTexto2);
-    border :1px solid $fondo3;
+    @include font-wheightBackground-colorColor(bold,$color3,$color2);
+    border :1px solid $color3;
 }
 
 .btn:hover{
-    @include font-wheightBackground-colorColor(bold,$fondo4,$colorTexto2);
+    @include font-wheightBackground-colorColor(bold,$color4,$color2);
 }

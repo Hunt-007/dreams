@@ -2,7 +2,7 @@
 /*blog*/
 
 .seccion_blog{
-    background-color: $fondo2;
+    background-color: $color2;
     padding: 5px;
     margin: 0 10%;/* Margen superior e inferior | margen izquierdo y derecho */
     .row{
@@ -16,7 +16,7 @@
         @extend .max_ancho;
         .blog_destacado{
             font-weight: bold;
-            color: $colorTexto3;
+            color: $color3;
         }
     }
 }
